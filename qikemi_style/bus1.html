@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<!--为了保证IE能够使用最新渲染模式而不是兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 让部分国产浏览器默认采用“高速”模式渲染页面 -->
+		<meta name="renderer" content="webkit">
+		<!-- if browser version < ie8, alert div. -->
+		<!--[if lt IE 8]>
+	        <div class="alert alert-danger">您正在使用过时的浏览器，请升级体验更好的兼容效果。</div>
+	    <![endif]-->
+		<!-- 针对IE8浏览器及以下的浏览器，
+	    	我们引入html5shiv来使得HTML5标签在IE8中也能使用，
+	    	引入respond.js来帮助ie实现该功能支持media query来实现响应式布局 
+	    -->
+		<!--[if lt IE 9]>
+			<script src="./js/html5shiv/html5shiv.js"></script>
+			<script src="./js/maxcdn/respond.min.js"></script>
+		<![endif]-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Hello world!</title>
+
+		<!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+		<script src="js/jquery/jquery-1.11.0.min.js"></script>
+		<!-- ZUI Javascript组件 -->
+		<script src="js/zui/zui.min.js"></script>
+		<!-- zui CSS -->
+		<link href="css/zui/zui.min.css" type="text/css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/admin.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style>
+			#shortcutBox {
+				margin-top: 30px;
+			}
+			#shortcutBox .shortcut {
+				transition: all .3s;
+				-o-transition: all .3s;
+				-moz-transition: all .3s;
+				-webkit-transition: all .3s;
+				text-align: center;
+			}
+			#shortcutBox .shortcut:hover {
+				opacity: 0.8;
+				-moz-opacity: 0.8;
+			}
+			#shortcutBox h3 {
+				line-height: 170px;
+				font-size: 24px;
+				color: #FFFFFF;
+				font-weight: 500;
+			}
+			#shortcutBox a:hover {
+				text-decoration: none;
+			}
+			.article-admin {
+				background: #B91D47;
+			}
+			.product-admin {
+				background: #2D89EF;
+			}
+			.feedback-admin {
+				background: #00A300;
+			}
+			.company-admin {
+				background: #7F4311;
+			}
+			.site-admin {
+				background: #E3A21A;
+			}
+			.logo-admin {
+				background: #9F00A7;
+			}
+			.contact-admin {
+				background: #1E1E1E;
+			}
+			@media(max-width:992px){
+
+#shortcutBox {
+				margin-top: 20px;
+			}
+		}
+		@media(max-width:768px){
+
+#shortcutBox {
+			margin-top: -20px;
+		}
+	}
+		</style>
+		<!-- 防止列表跳动 -->
+				<script src="js/malsup/min.js"></script>
+	</head>
+
+	<body>
+		<nav class='navbar navbar-inverse navbar-fixed-top' role='navigation' id='mainNavbar'>
+			<div class='navbar-header'>
+				<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-ex1-collapse'>
+					<span class='sr-only'>Toggle navigation</span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+				</button>
+				<a href='#' class='navbar-brand'>公众平台</a>
+			</div>
+			<div class='collapse navbar-collapse navbar-ex1-collapse'>
+				<ul class='nav navbar-nav'>
+					<li class='active'><a href='#'>首页</a>
+					</li>
+					<li><a href='#'>文章</a>
+					</li>
+					<li><a href='#'>博客</a>
+					</li>
+					<li><a href='#'>产品</a>
+					</li>
+					<li><a href='#'>手册</a>
+					</li>
+					<li><a href='#'>单页</a>
+					</li>
+					<li><a href='#'>论坛</a>
+					</li>
+					<li><a href='#'>站点</a>
+					</li>
+					<li><a href='#'>界面</a>
+					</li>
+					<li><a href='#'>公司</a>
+					</li>
+					<li><a href='#'>会员</a>
+					</li>
+					<li><a href='#'>反馈</a>
+					</li>
+					<li><a href='#'>扩展</a>
+					</li>
+				</ul>
+				<ul class='nav navbar-nav' id='navbarSwitcher'>
+					<li><a href='###'><i class='icon-chevron-sign-right icon-large'></i></a>
+					</li>
+				</ul>
+				<ul class='nav navbar-nav navbar-right'>
+					<li class='dropdown'><a href='###' class='dropdown-toggle' data-toggle='dropdown'><i class='icon-globe icon-large'></i> &nbsp;简体<span class='caret'></span></a>
+						<ul class='dropdown-menu'>
+							<li><a rel='nofollow' href='javascript:selectLang("zh-tw")'>繁体</a>
+							</li>
+							<li><a rel='nofollow' href='javascript:selectLang("en")'>English</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href='#' target='_blank' class='navbar-link'>
+							<i class="icon-home icon-large"></i> 前台</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-user icon-large"></i> admin <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href='#' data-toggle='modal'>修改密码</a>
+							</li>
+							<li><a href='#' data-toggle='modal'>第三方登录</a>
+							</li>
+							<li><a href='#'>退出</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="clearfix row-main">
+			<div class='col-md-2'>
+				<div class="leftmenu affix hiddden-xs hidden-sm">
+					<ul class='nav-left nav nav-primary nav-stacked'>
+						<li><a href='/backend.php?m=site&f=setbasic'>站点设置<i class="icon-chevron-right"></i></a>
+						</li>
+						<li><a href='/backend.php?m=nav&f=admin'>导航设置<i class="icon-chevron-right"></i></a>
+						</li>
+						<li><a href='/backend.php?m=site&f=setupload'>上传设置<i class="icon-chevron-right"></i></a>
+						</li>
+						<li class='active'><a href='/backend.php?m=tag&f=admin'>关键词设置<i class="icon-chevron-right"></i></a>
+						</li>
+						<li><a href='/backend.php?m=site&f=setoauth'>开放登录<i class="icon-chevron-right"></i></a>
+						</li>
+						<li><a href='/backend.php?m=links&f=admin'>友情链接<i class="icon-chevron-right"></i></a>
+						</li>
+						<li><a href='/backend.php?m=mail&f=admin'>发信设置<i class="icon-chevron-right"></i></a>
+						</li>
+						<li><a href='/backend.php?m=wechat&f=admin'>微信设置<i class="icon-chevron-right"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class='col-md-10'>
+
+				<div class='panel panel-pure'>
+					<form method='post' class='form-inline form-search '>
+						<div class='input-group'>
+							<!--<select name='tags[]' id='tags' multiple='multiple' class='form-control chosen  search-query' placeholder='请输入关键词'>
+								<!--<option value='企业建站'>企业建站</option>
+								<option value='企业建站系统'>企业建站系统</option>
+								<option value='企业门户'>企业门户</option>
+							</select>-->
+							<span class="input-group-btn">  <input type='submit' id='submit' class='btn btn-primary' value='搜索' data-loading='稍候...' />  </span>
+						</div>
+					</form>
+				</div>
+
+				<div class='panel'>
+					<div class='panel-heading'><strong><i class='icon-tags'></i> 关键词管理</strong>
+					</div>
+					<table class='table table-hover table-bordered table-striped tablesorter'>
+						<thead>
+							<tr class='text-center'>
+								<th class='col-xs-3'>
+									<div class='header'><a href='#'>关键词</a>
+									</div>
+								</th>
+								<th class='col-xs-1'>
+									<div class='headerSortDown'><a href='#'>权重</a>
+									</div>
+								</th>
+								<th>
+									<div class='header'><a href='#'>链接</a>
+									</div>
+								</th>
+								<th class='col-xs-2'>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class='text-center text-middle'>
+								<td>安全cms</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>微信网站</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>手机建站系统</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>移动建站</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>微网站</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>微信营销系统</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>免费企业建站</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>蝉知</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>蝉知空间</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+							<tr class='text-center text-middle'>
+								<td>开源csm</td>
+								<td>1</td>
+								<td class='text-left'></td>
+								<td> <a href='#' data-toggle='modal'>编辑链接</a>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan='4'>
+									</strong>条，页面：<strong>1/2</strong> 首页 上页 <a href='#'>下页</a>
+									<a href='#'>末页</a>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default navbar-fixed-bottom hidden-sm hidden-xs" role="navigation">
+			<div class="collapse navbar-collapse navbar-ex6-collapse">
+				<div class='navbar-text pull-right'> <span id='poweredBy'>powerBy</span>
+				</div>
+			</div>
+		</nav>
+	</body>
+
+</html>
