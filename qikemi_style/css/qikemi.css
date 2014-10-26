@@ -1,0 +1,111 @@
+/**
+* The QiKeMi Group Base Style For Wechat Plaform. 
+*
+* @author      Xie Xianbin <a.b@hotmai.com>
+* @package     qikemi
+* @link        http://www.qikemi.com 
+ */
+
+/** nav bar **/
+
+.navbar-inverse {
+	border-color: #6d4580;
+	background-color: #8957a1;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: #6d4580;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: #FFF;
+	background-color: #6d4580;
+}
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+	color: #fff;
+	background-color: #6d4580;
+}
+.navbar-inverse .navbar-right .dropdown .dropdown-menu>li>a:hover,
+.navbar-inverse .navbar-right .dropdown .dropdown-menu>li>a:focus {
+	color: #fff;
+	background-color: #6d4580;
+}
+.nav>li>a:hover,
+.nav>li>a:focus {
+	color: #8957a1;
+	text-decoration: none;
+	background-color: #f1f1f1;
+}
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+	border-color: #6d4580;
+	background-color: #8957a1;
+}
+.nav .caret {
+	border-top-color: #8957a1;
+	border-bottom-color: #6d4580
+}
+.nav .caret {
+	border-top-color: #8957a1;
+	border-bottom-color: #6d4580
+}
+.nav-primary>li.active>a,
+.nav-primary>li.active>a:hover,
+.nav-primary>li.active>a:focus {
+	color: #fff;
+	border-color: #6d4580;
+	background-color: #8957a1;
+}
+/** Element **/
+
+.btn-primary {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+	border-color: #6d4580;
+	background-color: #8957a1;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+	color: #FFF;
+	border-color: #8957a1;
+	background-color: #6d4580;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+a {
+	color: #145ccd;
+	text-decoration: none;
+	-webkit-transition: all .5s cubic-bezier(0.175, .885, .32, 1);
+	transition: all .5s cubic-bezier(0.175, .885, .32, 1)
+}
+.form-control:focus {
+	border-color: #145ccd;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(20, 92, 205, .6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(20, 92, 205, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(20, 92, 205, .6)
+}
+/** table css **/
+
+table.tablesorter thead tr .headerSortDown,
+table.tablesorter thead tr .headerSortUp {
+	color: #8957a1;
+}
+table.tablesorter thead tr .headerSortDown a,
+table.tablesorter thead tr .headerSortUp a {
+	color: #8957a1
+}
+table.tablesorter thead tr .headerSortUp:after {
+	color: #8957a1;
+}
+table.tablesorter thead tr .headerSortDown:after {
+	color: #8957a1;
+}
+/** 左侧导航 **/
