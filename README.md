@@ -1,4 +1,11 @@
-qikemi_style
+static pages
 ============
 
-QiKeMi style Use Zui framework. Create By Xiexianbin.
+For all xiexianbin project static pages.
+
+cas
+===
+
+https://github.com/xiexianbin/cas
+
+
