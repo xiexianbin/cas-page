@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8" />
-		<title>魔讯科技 | 中央认证系统</title>
+		<title>Dcloud中央认证系统</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<link rel="alternate icon" type="image/png" href="img/favicon.png">
 
-		<link rel="stylesheet" href="css/amazeui/amazeui.min.css" />
+		<link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/cas.css" />
 	</head>
 
 	<body>
 		<!-- start header -->
-		<header class="am-header am-g cas-header">
-			<div class="am-container">
-				<div class="am-u-md-4 cas-margin-top-6">
-					<h1 class="logo">
-						<div class="logo-img am-fl"></div>
-						<span class="am-fl">账号登录</span>
-					</h1>
-				</div>
-
-				<div class="am-u-md-2 cas-navigation cas-a">
-					<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">魔讯网</a>
-					<span class="cas-split">|</span>
-					<a href="http://www.dcloud.wang/" target="_blank" data-spm-protocol="i">神马传文</a>
+		<header class="container-fluid  cas-header-container cas-hr-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="row">
+							<div class="col-md-6 col-lg-6">
+								<img src="img/v2/logo-dcloud.svg" alt="DCloud" class="img-rounded cas-logo">
+							</div>
+							<div class="col-md-6 col-lg-6">
+								<h3 class="right lead text-left">账号登录</h3>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
 		<!-- end header -->
 
 		<!-- start main -->
-		<div class="am-g am-container">
+		<div class="container">
 			<div class="am-container cas-container">
 				<div class="am-u-md-6">
 
@@ -99,11 +98,18 @@
 								</div>
 								<div class="cas-account-container">
 									<ul>
-										<a><li class="login-icon qq-icon am-fl"></li></a>
-										<a><li class="login-icon sina-icon am-fl"></li></a>
-										<a><li class="login-icon tqq-icon am-fl"></li></a>
-										<a><li class="login-icon wechat-icon am-fl"></li></a>
-										
+										<a>
+											<li class="login-icon qq-icon am-fl"></li>
+										</a>
+										<a>
+											<li class="login-icon sina-icon am-fl"></li>
+										</a>
+										<a>
+											<li class="login-icon tqq-icon am-fl"></li>
+										</a>
+										<a>
+											<li class="login-icon wechat-icon am-fl"></li>
+										</a>
 									</ul>
 								</div>
 							</dd>
@@ -116,27 +122,59 @@
 		<!-- start main -->
 
 		<!-- start footer -->
-		<footer class="am-footer cas-footer cas-a">
-			<div class="am-container">
-				<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">魔讯网</a>
-				<span class="cas-split">|</span>
-				<a href="http://www.dcloud.wang/" target="_blank" data-spm-protocol="i">神马传文</a>
-				<br>
-				<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">关于我们</a>
-				<span class="cas-split">|</span>
-				<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">联系我们</a>
-				<span class="cas-split">|</span>
-				<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">法律声明</a>
-				<span class="cas-split">|</span>
-				<a href="./cas/account/center.html" target="_blank" data-spm-protocol="i">安全中心</a>
-				<br>
-				<small>&copy; 2015 Moxun.wang 版权所有</small>
-				<small>备案许可证：豫1500000001号</small>
-				<br>
-				<img src="./img/v1/ssl.png" />
+		<footer class="container">
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">魔讯网</a>
+						</li>
+						<b>|</b>
+						<li>
+							<a href="http://www.dcloud.wang/" target="_blank" data-spm-protocol="i">神马传文</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+						</li>
+						<b>|</b>
+						<li>
+							<a href="#" target="_blank" data-spm-protocol="i">联系我们</a>
+						</li>
+						<b>|</b>
+						<li>
+							<a href="#" target="_blank" data-spm-protocol="i">法律声明</a>
+						</li>
+						<b>|</b>
+						<li>
+							<a href="#" target="_blank" data-spm-protocol="i">安全中心</a>
+						</li>
+					</ul>
+					<ul class="list-inline">
+						<li>
+							备案许可证：豫ICP备14020342号 © 2014-2016 Dcloud.xyz 版权所有
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="row">
+					<ul class="list-inline list-security">
+						<li>
+							<a href="http://zhanzhang.anquan.org/physical/report/?domain=www.xiexianbin.cn" target="_blank" title="安全联盟站长平台安全网站">
+								<img src="./img/zhanzhang.anquan.org.png" alt="安全联盟站长平台" class="security-img">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div style="display: block; height: 36px;"></div>
 			</div>
 		</footer>
 		<!-- end footer -->
 	</body>
-
 </html>
