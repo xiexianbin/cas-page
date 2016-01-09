@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title>Dcloud中央认证系统</title>
@@ -32,9 +33,15 @@
 					<div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 						<div class="cas-header-link">
 							<ul class="list-inline">
-								<li><a href="#" target="_blank" data-spm-protocol="i">关于我们</a></li>
-								<li class="cas-li-split"><a href="#" target="_blank" data-spm-protocol="i">关于我们</a></li>
-								<li class="cas-li-split"><a href="#" target="_blank" data-spm-protocol="i">关于我们</a></li>
+								<li>
+									<small><a href="#" target="_blank" data-spm-protocol="i">关于我们</a></small>
+								</li>
+								<li class="cas-li-split">
+									<small><a href="#" target="_blank" data-spm-protocol="i">关于我们</a></small>
+								</li>
+								<li class="cas-li-split">
+									<small><a href="#" target="_blank" data-spm-protocol="i">关于我们</a></small>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -50,75 +57,77 @@
 					<img src="./img/450-350.jpg">
 				</div>
 				<div class="col-md-5 col-lg-5">
-					<section data-am-widget="" class="">
-						<dl class="am-accordion-item am-active">
-							<dd class="am-accordion-bd am-collapse am-in">
-								<div class="cas-accordion-header">
-									会员登录
+					<section class="row">
+						<div class="col-md-8 col-lg-8 cas-box">
+							<div class="cas-hr-bottom">
+								<span>会员登录</span>
+							</div>
+							<form method="post" action="login.html" class="am-form" role="form">
+								<div class="has-error"></div>
+								<div class="form-group">
+									<label for="name">登录名</label>
+									<input type="text" class="form-control" id="name" placeholder="邮箱/用户名/手机">
 								</div>
-							</dd>
-							<dd class="am-accordion-bd am-collapse am-in">
-								<form method="post" action="login.html" class="am-form">
-									<div class="am-form-group">
-										<label for="email" class="am-fl" style="margin-bottom: 8px;"> 登录名 </label>
-										<!--<label for="email" class="am-fr cas-label"><a href="#"> 忘记用户名？</a>-->
-										</label>
-										<input type="email" class="am-input-sm cas-pl" name="" id="email" style="padding-left: 28px; line-height: 20px;" placeholder="邮箱/用户名/手机">
-										<i class="cas-icon cas-icon-user"></i>
-									</div>
-									<div class="am-form-group">
-										<label for="password" class="am-fl" style="margin-bottom: 8px;"> 密码 </label>
-										<label for="password" class="am-fr cas-label"><a href="findpassword.html"> 忘记密码？</a>
-										</label>
-										<input type="password" class="am-input-sm cas-pl" name="" id="password" style="padding-left: 28px; line-height: 20px;" value="" placeholder="登录密码">
-										<i class="cas-icon cas-icon-lock"></i>
-									</div>
-									<div class="am-form-group">
-										<label for="password" class="am-fl"> 验证码 </label>
-										<br>
-										<div class="am-u-sm-4 cas-cl-pd">
-											<input type="text" class="am-input-sm am-form-field cas-pl" style="padding-left: 28px; line-height: 20px;" name="" id="password" value="">
-											<i class="cas-icon cas-icon-key"></i>
+								<div class="form-group">
+									<div class="block">
+										<div class="col-md-7">
+											<label for="name">密码</label>
 										</div>
-										<div class="am-u-sm-8 cas-cl-pd">
+										<div class="col-md-5">
+											<label for="name" class="right cas-label">
+												<small><a href="findpassword.html">忘记密码？</a></small>
+											</label>
+										</div>
+									</div>
+									<input type="text" class="form-control" id="name" placeholder="登录密码">
+								</div>
+								<div class="form-group">
+									<label for="name">验证码</label>
+									<div class="block">
+										<div class="col-md-5">
+											<input type="text" class="form-control" id="name" placeholder="验证码">
+										</div>
+										<div class="col-md-3">
 											<img src="img/genimage.png" style="height: 30px;">
+										</div>
+										<div class="col-md-4" style="margin-top: 5px;">
 											<small><a href="#">点击刷新</a></small>
 										</div>
 									</div>
-									<div class="am-form-group">
-										<label class="am-checkbox-inline">
-											<input type="checkbox" value="option1">记住我
-										</label>
-									</div>
-									<div>
-										<button type="submit" class="am-btn am-btn-primary am-btn-block am-btn-sm cas-btn">登 录</button>
-										<label for="password" class="am-fr cas-label"><a href="register.html"> 免费注册？</a>
-										</label>
-									</div>
-								</form>
-							</dd>
-							<dd class="am-accordion-bd am-collapse am-in">
-								<div class="cas-accordion-header">
-									使用第三方账号登录
 								</div>
-								<div class="cas-account-container">
-									<ul>
-										<a>
-											<li class="login-icon qq-icon am-fl"></li>
-										</a>
-										<a>
-											<li class="login-icon sina-icon am-fl"></li>
-										</a>
-										<a>
-											<li class="login-icon tqq-icon am-fl"></li>
-										</a>
-										<a>
-											<li class="login-icon wechat-icon am-fl"></li>
-										</a>
-									</ul>
+								<div>
+									<button type="submit" class="btn btn-block btn-primary text-center cas-login-btn">登 录</button>
+									<label for="password" class="text-right block cas-label">
+										<small class="right"><a href="register.html"> 免费注册？</a></small>
+									</label>
 								</div>
-							</dd>
-						</dl>
+							</form>
+							<div class="cas-hr-bottom">第三方账号登录</div>
+							<div class="login-container">
+								<ul class="list-inline">
+									<li>
+										<a href="#">
+											<div class="login-icon qq-icon"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="login-icon sina-icon"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="login-icon tqq-icon"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="login-icon wechat-icon"></div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</section>
 				</div>
 
@@ -178,4 +187,5 @@
 		</footer>
 		<!-- end footer -->
 	</body>
+
 </html>

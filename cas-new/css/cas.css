@@ -6,6 +6,19 @@
 
 /* for login page */
 
+.block {
+	display: block;
+	overflow: hidden;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 .cas-header-container {
 	height: 75px;
 }
@@ -20,7 +33,7 @@
 
 header .list-inline>li,
 footer .list-inline>li {
-    padding-left: 8px;
+	padding-left: 8px;
 }
 
 .cas-logo,
@@ -43,8 +56,8 @@ footer .list-inline>li {
 
 .cas-li-split {
 	border-left: 1px solid #9c9c9c;
-    height: 14px;
-    line-height: 14px;
+	height: 14px;
+	line-height: 14px;
 }
 
 .cas-hr-bottom {
@@ -52,8 +65,93 @@ footer .list-inline>li {
 	padding-bottom: 5px;
 }
 
-.cas-container{
-	margin: 65px 0;
+.cas-container {
+	margin: 42px 0;
+}
+
+.cas-box {
+	border: 1px solid #dedede;
+	padding: 20px 20px 5px 20px;
+}
+
+.cas-box .form-group {
+	margin: 10px 0;
+}
+
+.cas-box .form-control {
+	border-radius: 0;
+	box-shadow: none;
+	border-color: #d2d6de;
+}
+
+.cas-box .col-md-3,
+.cas-box .col-md-4,
+.cas-box .col-md-5,
+.cas-box .col-md-7,
+.cas-box .col-lg-3,
+.cas-box .col-lg-4,
+.cas-box .col-lg-5 {
+	padding: 0 0;
+}
+
+.cas-box .cas-label {
+	font-weight: 400;
+}
+
+.cas-login-btn {
+	margin: 12px 0 8px 0;
+	border-radius: 0;
+}
+
+.login-container{
+	padding-top: 15px;
+}
+
+.login-icon {
+	background: url("../img/v2/bindaccount/all-account.png");
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+}
+
+.qq-icon {
+	background-position: 0 0;
+}
+
+.qq-icon-mouseon {
+	background-position: 0 -24px;
+}
+
+.sina-icon {
+	background-position: -25px -0px;
+}
+
+.sina-icon-mouseon {
+	background-position: -25px -24px;
+}
+
+.ren-icon {
+	background-position: -50px -0px;
+}
+
+.ren-icon-mouseon {
+	background-position: -50px -24px;
+}
+
+.tqq-icon {
+	background-position: -75px -0px;
+}
+
+.tqq-icon-mouseon {
+	background-position: -75px -24px;
+}
+
+.wechat-icon {
+	background-position: -175px -0px;
+}
+
+.wechat-icon-mouseon {
+	background-position: -175px -24px;
 }
 
 footer {
