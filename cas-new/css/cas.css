@@ -82,8 +82,17 @@ footer .list-inline>li {
 	border-radius: 0;
 	box-shadow: none;
 	border-color: #d2d6de;
+	padding-left: 30px;
 }
 
+.cas-box .col-xs-3,
+.cas-box .col-xs-4,
+.cas-box .col-xs-5,
+.cas-box .col-xs-7,
+.cas-box .col-sm-3,
+.cas-box .col-sm-4,
+.cas-box .col-sm-5,
+.cas-box .col-sm-7,
 .cas-box .col-md-3,
 .cas-box .col-md-4,
 .cas-box .col-md-5,
@@ -96,6 +105,28 @@ footer .list-inline>li {
 
 .cas-box .cas-label {
 	font-weight: 400;
+}
+
+.cas-box .cas-fonts{
+    position: absolute;
+    z-index: 3;
+    float: left;
+    display: block;
+    margin: 4px 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.cas-box .username-label {
+    background: url(../img/v2/login/username.png) no-repeat;
+}
+
+.cas-box .password-label{
+	background: url(../img/v2/login/password.png) no-repeat;
+}
+
+.cas-box .validate-label{
+	background: url(../img/v2/login/key.png) no-repeat;
 }
 
 .cas-login-btn {
@@ -159,6 +190,9 @@ footer {
 	color: #9c9c9c;
 }
 
+.cas-box a:link,
+.cas-box a:active,
+.cas-box a:visited,
 footer a:link,
 footer a:active,
 footer a:visited,
