@@ -3,23 +3,57 @@
  * author me@xiexianbin.cn
  */
 
+
 /* for login page */
-.cas-header-container{
+
+.cas-header-container {
 	height: 75px;
 }
 
-.cas-logo{
-	height: 65px;
+.cas-logo span {
+	height: 60px;
+	line-height: 60px;
+	color: #999;
+	font-size: 20px;
+	display: block;
 }
 
-.cas-hr-top{
+header .list-inline>li,
+footer .list-inline>li {
+    padding-left: 8px;
+}
+
+.cas-logo,
+.cas-header-link {
+	margin: 12px 10px 2px 0px;
+}
+
+.cas-logo-img {
+	height: 60px;
+}
+
+.cas-header-link {
+	margin-top: 35px;
+}
+
+.cas-hr-top {
 	border-top: 1px solid #e3e3e3;
 	padding-top: 10px;
 }
 
-.cas-hr-bottom{
+.cas-li-split {
+	border-left: 1px solid #9c9c9c;
+    height: 14px;
+    line-height: 14px;
+}
+
+.cas-hr-bottom {
 	border-bottom: 1px solid #e3e3e3;
 	padding-bottom: 5px;
+}
+
+.cas-container{
+	margin: 65px 0;
 }
 
 footer {
@@ -27,19 +61,23 @@ footer {
 	color: #9c9c9c;
 }
 
-footer a:link, footer a:active, footer a:visited {
+footer a:link,
+footer a:active,
+footer a:visited,
+header a:link,
+header a:active,
+header a:visited {
 	color: #666;
 	text-decoration: none;
 }
 
-footer a:hover {
+footer a:hover,
+header a:hover {
 	color: #f40;
 	text-decoration: none;
 }
 
 footer .list-security .security-img {
-    width: 76px;
-    height: 29px;
+	width: 76px;
+	height: 29px;
 }
-
-
