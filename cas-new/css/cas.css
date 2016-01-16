@@ -491,3 +491,53 @@ footer .list-security .security-img {
     color: #666;
     margin: 0 5px;
 }
+
+.cas-bind-container{
+    margin-top: 30px;
+	position: relative;
+    display: flex;
+}
+
+.bind-img {
+    background: url(../img/v2/ucenter/sprite_sec_question.png) no-repeat 0 0;
+    float: right;
+    width: 73px;
+    height: 73px;
+}
+
+.bind-phone{
+	background-position: -96px -6px;
+}
+
+.bind-email{
+	background-position: -96px -104px;
+}
+
+.bind-question{
+	background-position: -96px -202px;
+}
+
+.unbind-phone{
+	background-position: -5px -6px
+}
+
+.unbind-email{
+	background-position: -5px -104px;
+}
+
+.unbind-question{
+	background-position: -5px -202px;
+}
+
+.bind-title-detail-msg {
+    font-size: 18px;
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+    font-family: 宋体, Arial, Helvetica, STHeiti;
+}
+
+
+
+
+
+
