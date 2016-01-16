@@ -6,6 +6,10 @@
 
 /* for login page */
 
+.border-radius-none {
+	border-radius: 0;
+}
+
 .block {
 	display: block;
 	overflow: hidden;
@@ -17,6 +21,22 @@
 
 .right {
 	float: right;
+}
+
+.padding-20 {
+	padding: 20px 20px;
+}
+
+.padding-left-20 {
+	padding-left: 20px;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
+.margin-top-20{
+	margin-top: 20px;
 }
 
 .cas-header-container {
@@ -79,7 +99,6 @@ footer .list-inline>li {
 }
 
 .cas-box .form-control {
-	border-radius: 0;
 	box-shadow: none;
 	border-color: #d2d6de;
 	padding-left: 30px;
@@ -103,38 +122,60 @@ footer .list-inline>li {
 	padding: 0 0;
 }
 
+.cas-box1 .col-xs-3,
+.cas-box1 .col-xs-4,
+.cas-box1 .col-xs-5,
+.cas-box1 .col-xs-7,
+.cas-box1 .col-sm-3,
+.cas-box1 .col-sm-4,
+.cas-box1 .col-sm-5,
+.cas-box1 .col-sm-7,
+.cas-box1 .col-md-3,
+.cas-box1 .col-md-4,
+.cas-box1 .col-md-5,
+.cas-box1 .col-md-7,
+.cas-box1 .col-lg-3,
+.cas-box1 .col-lg-4,
+.cas-box1 .col-lg-5 {
+	padding: 0 0;
+}
+
 .cas-box .cas-label {
 	font-weight: 400;
 }
 
-.cas-box .cas-fonts{
-    position: absolute;
-    z-index: 3;
-    float: left;
-    display: block;
-    margin: 4px 4px;
-    width: 32px;
-    height: 32px;
+.cas-box .cas-fonts {
+	position: absolute;
+	z-index: 3;
+	float: left;
+	display: block;
+	margin: 4px 4px;
+	width: 32px;
+	height: 32px;
 }
 
 .cas-box .username-label {
-    background: url(../img/v2/login/username.png) no-repeat;
+	background: url(../img/v2/login/username.png) no-repeat;
 }
 
-.cas-box .password-label{
+.cas-box .password-label {
 	background: url(../img/v2/login/password.png) no-repeat;
 }
 
-.cas-box .validate-label{
+.cas-box .validate-label {
 	background: url(../img/v2/login/key.png) no-repeat;
+}
+
+.cas-box1 span {
+	height: 34px;
+	line-height: 34px;
 }
 
 .cas-login-btn {
 	margin: 12px 0 8px 0;
-	border-radius: 0;
 }
 
-.login-container{
+.login-container {
 	padding-top: 15px;
 }
 
@@ -185,6 +226,45 @@ footer .list-inline>li {
 	background-position: -175px -24px;
 }
 
+.cas-nav {
+	height: 42px;
+	line-height: 42px;
+	width: 100%;
+	background-color: #00a2ca;
+}
+
+.cas-nav .nav>li>a {
+	padding: 10px 25px;
+}
+
+.cas-nav a {
+	color: #fff;
+	font-size: 18px;
+	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+}
+
+.cas-nav .navbar-nav>li>a:hover {
+	background: #0e90d2
+}
+
+.cas-nav .active {
+	background: #0e90d2
+}
+
+.cas-nav .navbar-nav>li>a {
+	padding-top: 12px;
+	padding-bottom: 10px;
+}
+
+.cas-container-border{
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	
+}
+
+
+
+/* for page footer */
 footer {
 	font-size: 85%;
 	color: #9c9c9c;
@@ -212,4 +292,202 @@ header a:hover {
 footer .list-security .security-img {
 	width: 76px;
 	height: 29px;
+}
+
+/* for cas user center main page */
+.cas-ucenter-segment {
+    color: #333;
+    background: #f3f3f3;
+    height: 38px;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    font-weight: bold;
+    line-height: 38px;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.cas-ucenter-left li a {
+	position: relative;
+	margin-left: -16px;
+	line-height: 50px;
+	font-size: 12px;
+	float: left;
+	width: 285px;
+	padding-left: 44px;
+	border-bottom: 1px dotted #dcdcdc;
+	color: #666;
+	background: url('../img/v2/ucenter/ucenternav_bg.png') no-repeat;
+}
+.cas-ucenter-left li.changepwd a {
+	background-position: 14px 12px;
+}
+.cas-ucenter-left li.phone a {
+	background-position: 14px -38px;
+}
+.cas-ucenter-left li.email a {
+	background-position: 14px -88px;
+}
+.cas-ucenter-left li.appeal a {
+	background-position: 14px -138px;
+}
+.cas-ucenter-left li.help a {
+	background-position: 14px -188px;
+}
+
+.cas-bold{
+	font-weight: bold;
+    color: rgb(102, 102, 102);
+}
+
+.cas-changeinfo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cas-cright-title {
+    font-size: 22px;
+    color: #404040;
+    font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+.cas-cright-info {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.cas-cright-segment {
+    border-top: 1px dashed #dfdfdf;
+}
+
+.score-step,
+.score-state-left{
+	background: url('../img/v2/ucenter/ucenter_1.png') no-repeat 0 0;
+}
+
+.score-step {
+    background-position: 0 -138px;
+    width: 435px;
+    height: 10px;
+    margin: 14px 0 0 0;
+    display: block;
+}
+
+.score-state-left {
+	background-position: 0 -180px;
+	float: left;
+	width: 5px;
+	height: 10px;
+}
+
+.score-num {
+	font-size: 28px;
+	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+	margin-left: 10px;
+	line-height: 34px;
+	color: #fdb13f;
+}
+
+.score-tip {
+    clear: both;
+    font-size: 14px;
+    font-weight: normal;
+    height: 44px;
+    line-height: 24px;
+    color: #333;
+    padding: 10px 0 10px 0;
+}
+
+.score-detail-ok,
+.score-detail-warn,
+.score-detail-err {
+    background: url('../img/v2/ucenter/ucenter_1.png') no-repeat 0 0;
+    padding-left: 20px;
+}
+
+.score-detail-ok{
+	background-position: -416px -76px;
+}
+
+.score-detail-warn{
+	background-position: -416px -35px;
+}
+
+.score-detail-err{
+	background-position: -416px 4px;
+}
+
+.score-detail-list {
+    padding-left: 24px;
+    margin-bottom: 5px;
+    margin-right: 180px;
+}
+
+.font-style{
+    color: #666;
+    font-size: 12px;
+}
+
+.score-detail-list li{
+    line-height: 30px;
+    height: 30px;
+}
+
+.notice-level {
+    height: 130px;
+    width: 122px;
+    background: url('../img/v2/ucenter/ucenter_1.png') no-repeat -227px 12px;
+}
+
+.notice-list-tip {
+    float: right;
+    display: block;
+    margin-right: 70px;
+    _margin-right: 35px;
+    width: 240px;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 20px;
+    background: url(../img/v2/ucenter/noticelisttip_bg.png) no-repeat;
+    color: #666;
+}
+
+.level-select {
+    background: url(../img/v2/ucenter/radio_select.png) no-repeat 5px 7px;
+}
+
+.level-normal {
+	background: url(../img/v2/ucenter/radio_normal.png) no-repeat 5px 7px;
+}
+
+.notice-list li {
+	cursor: pointer;
+    padding-bottom: 14px;
+    _padding-bottom: 18px;
+    padding-left: 25px;
+    -moz-transition: .1s;
+    -o-transition: .1s;
+    -webkit-transition: .1s;
+    display: flex;
+    height: 52px;
+}
+
+.notice-list li span{
+	margin-top: 4px;
+}
+
+.notice-list li b{
+	display: block;
+    float: left;
+    font-size: 24px;
+    font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+    font-weight: normal;
+    color: #666;
+    margin: 0 5px;
 }
