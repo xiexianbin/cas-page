@@ -234,6 +234,14 @@ footer .list-inline>li {
 	background-position: -175px -24px;
 }
 
+.github-icon {
+	background: url("../img/v2/bindaccount/github_24_24.png");
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+	background-color: gainsboro;
+}
+
 .cas-nav {
 	height: 42px;
 	line-height: 42px;
