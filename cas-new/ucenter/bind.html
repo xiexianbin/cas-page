@@ -3,165 +3,231 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>魔讯科技 | 中央认证系统</title>
+		<title>Dcloud中央认证系统</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<link rel="alternate icon" type="../../image/png" href="../../img/favicon.png">
+		<link rel="alternate icon" type="image/png" href="img/favicon.png">
 
-		<link rel="stylesheet" href="../../css/amazeui/amazeui.min.css" />
-		<link rel="stylesheet" href="../../css/cas.css" />
+		<link rel="stylesheet" href="../bootstrap-3.3.6/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/cas.css" />
 	</head>
 
 	<body>
-		<div id="wrapper" class="">
-			<!-- start header -->
-			<header class="am-header am-g cas-header">
-				<div class="am-container">
-					<div class="am-u-md-4 cas-margin-top-6">
-						<h1 class="logo">
-						<div class="logo-img am-fl"></div>
-						<span class="am-fl">安全中心</span>
-					</h1>
-					</div>
-
-					<div class="am-u-md-2 cas-navigation cas-a">
-						<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">魔讯网</a>
-						<span class="cas-split">|</span>
-						<a href="http://www.dcloud.wang/" target="_blank" data-spm-protocol="i">神马传文</a>
-					</div>
-				</div>
-			</header>
-			<!-- end header -->
-
-			<!-- start nav -->
-			<div class="am-header am-g" style="padding: 0;">
-				<div class="cas-nav">
-					<div class="am-container">
-						<div class="am-u-md-10">
-							<ul class="cas-nav-list">
-								<li class="list-item">
-									<a href="center.html"><span>首页</span></a>
-								</li>
-								<li class="list-item">
-									<a href="security.html"><span>密保工具</span></a>
-								</li>
-								<li class="list-item">
-									<a href="password.html"><span>密码管理</span></a>
-								</li>
-								<li class="list-item active">
-									<a href="bind.html"><span>账号关联</span></a>
-								</li>
-							</ul>
-						</div>
-						<div class="am-u-md-2">
-							<span class="cas-nav-cright">个人中心</span>
+		<!-- start header -->
+		<header class="container-fluid  cas-header-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="row cas-logo">
+							<div class="col-md-4 col-lg-4">
+								<img src="../img/v2/logo-dcloud.svg" alt="DCloud" class="img-rounded img-responsive cas-logo-img">
+							</div>
+							<div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+								<span class="text-left">安全中心</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- end nav -->
+		</header>
+		<!-- end header -->
 
-			<!-- start main -->
-			<div class="am-g am-container">
-				<div class="am-container">
-					<ul class="page-security-associate">
-						<li class="associate-acc">
-							<!--<div style="display:none;">
-								<form method="post" id="accBindForm">
-									<input type="hidden" name="ostype" value="" id="accTypeIpt">
-									<input type="hidden" name="bdstoken" value="d483299962fb631bd3be889c0249deb2"> </form>
-							</div>-->
-							<h3 class="associate-acc-title">我绑定的外部帐号<span class="desc"></span></h3>
-							<ul class="associate-acc-list">
-								<li class="list-item list-item-thirdParty">
-									<div class="acc-left">
-										<div class="avatar-ctn">
-											<img src="../../img/v1/bindaccount/renren.jpg" alt="人人网" title="人人网" class="avatar-img"> </div>
-									</div>
-									<div class="acc-right acc-right-cw"> 
-										<span class="name">人人网</span> 
-										<a class="acc-unbind-link" href="" data-accname="人人网" data-accid="1">[解除关联]</a> 
-									</div>
-								</li>
-								<li class="list-item list-item-thirdParty">
-									<div class="acc-left">
-										<div class="avatar-ctn">
-											<img src="../../img/v1/bindaccount/weibo.jpg" alt="新浪微博" title="新浪微博" class="avatar-img"> 
-										</div>
-									</div>
-									<div class="acc-right acc-right-cw"> 
-										<span class="name">新浪微博</span> 
-										<a class="acc-unbind-link" href="" data-accname="新浪微博" data-accid="2">[解除关联]</a> </div>
-								</li>
-								<li class="list-item list-item-thirdParty">
-									<div class="acc-left">
-										<div class="avatar-ctn">
-											<img src="../../img/v1/bindaccount/qq.jpg" alt="腾讯" title="腾讯" class="avatar-img"> 
-										</div>
-									</div>
-									<div class="acc-right acc-right-cw"> 
-										<span class="name">腾讯</span> 
-										<a class="acc-unbind-link" href="" data-accname="腾讯" data-accid="15">[解除关联]</a> 
+		<!-- start nav -->
+		<nav class="container-fluid cas-nav" role="navigation">
+			<div class="container">
+				<div class="col-sm-12 col-md-12 col-lg-12 row">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="center.html"><span>首页</span></a>
+						</li>
+						<li>
+							<a href="security.html"><span>密保工具</span></a>
+						</li>
+						<li>
+							<a href="password.html"><span>密码管理</span></a>
+						</li>
+						<li class="active">
+							<a href="bind.html"><span>账号关联</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end nav -->
+
+		<!-- start main -->
+		<div class="container">
+			<div class="block margin-top-20">
+				<strong class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+					<p>已绑定的外部帐号</p>
+				</strong>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+					<ul class="list-inline">
+						<li class="col-sm-2">
+							<ul class="list-inline">
+								<li>
+									<div class="oauth-img">
+										<img src="../img/v2/bindaccount/renren.jpg" alt="人人网" title="人人网" class="avatar-img" />
 									</div>
 								</li>
-								<li class="list-item list-item-thirdParty">
-									<div class="acc-left">
-										<div class="avatar-ctn">
-											<img src="../../img/v1/bindaccount/weixin.jpg" alt="微信" title="微信" class="avatar-img"> </div>
-									</div>
-									<div class="acc-right acc-right-cw"> 
-										<span class="name">微信</span> 
-										<a class="acc-unbind-link" href="" data-accname="微信" data-accid="42">[解除关联]</a> 
+								<li class="row padding-20">
+									<span class="block">人人网</span>
+									<span class="block margin-top-10">
+										<a class="padding-top-20" href="" data-accname="人人网" data-accid="2">[解除关联]</a>
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li class="col-sm-2">
+							<ul class="list-inline">
+								<li>
+									<div class="oauth-img">
+										<img src="../img/v2/bindaccount/weibo.jpg" alt="新浪微博" title="新浪微博" class="avatar-img" />
 									</div>
 								</li>
-								<li class="list-item list-item-thirdParty">
-									<div class="acc-left">
-										<div class="avatar-ctn">
-											<img src="../../img/v1/bindaccount/feixin.jpg" alt="飞信" title="飞信"> </div>
-									</div>
-									<div class="acc-right acc-right-cw"> 
-										<span class="name">飞信</span> 
-										<a class="acc-bind-link" href="" data-accid="16">[关联帐号]</a> 
+								<li class="row padding-20">
+									<span class="block">新浪微博</span>
+									<span class="block margin-top-10">
+										<a class="padding-top-20" href="" data-accname="新浪微博" data-accid="2">[解除关联]</a>
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li class="col-sm-2">
+							<ul class="list-inline">
+								<li>
+									<div class="oauth-img">
+										<img src="../img/v2/bindaccount/qq.jpg" alt="腾讯" title="腾讯" class="avatar-img" />
 									</div>
 								</li>
-								<li class="list-item list-item-thirdParty">
-									<div class="acc-left">
-										<div class="avatar-ctn">
-											<img src="../../img/v1/bindaccount/tqq.jpg" alt="腾讯微博" title="腾讯微博"> </div>
+								<li class="row padding-20">
+									<span class="block">腾讯</span>
+									<span class="block margin-top-10">
+										<a class="padding-top-20" href="" data-accname="腾讯" data-accid="2">[解除关联]</a>
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li class="col-sm-2">
+							<ul class="list-inline">
+								<li>
+									<div class="oauth-img">
+										<img src="../img/v2/bindaccount/weixin.jpg" alt="微信" title="微信" class="avatar-img">
 									</div>
-									<div class="acc-right acc-right-cw"> 
-										<span class="name">腾讯微博</span> 
-										<a class="acc-bind-link" href="" data-accid="4">[关联帐号]</a> 
-									</div>
+								</li>
+								<li class="row padding-20">
+									<span class="block">微信</span>
+									<span class="block margin-top-10">
+										<a class="padding-top-20" href="" data-accname="微信" data-accid="2">[解除关联]</a>
+									</span>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<!-- start main -->
 
-			<!-- start footer -->
-			<footer class="am-footer cas-footer cas-a" style="background: none; margin-top: 0;">
-				<div class="am-container">
-					<!--<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">关于我们</a>
-				<span class="cas-split">|</span>
-				<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">联系我们</a>
-				<span class="cas-split">|</span>
-				<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">法律声明</a>
-				<br>-->
-					<small>&copy; 2015 Moxun.wang 版权所有</small>
-					<!--<small>备案许可证：豫1500000001号</small>-->
-					<br>
-					<img src="../../img/v1/ssl.png" />
+			<div class="block margin-top-20">
+				<strong class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+					<p>未绑定的外部帐号</p>
+				</strong>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+					<ul class="list-inline">
+						<li class="col-sm-2">
+							<ul class="list-inline">
+								<li class="padding-20">
+									<div class="oauth-img">
+										<img src="../img/v2/bindaccount/feixin.jpg" alt="飞信" title="飞信" />
+									</div>
+								</li>
+								<li class="row padding-20">
+									<span class="block">飞信</span>
+									<span class="block margin-top-10">
+										<a href="" data-accname="飞信" data-accid="2">[解除关联]</a>
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li class="col-sm-2">
+							<ul class="list-inline">
+								<li>
+									<div class="oauth-img">
+										<img src="../img/v2/bindaccount/tqq.jpg" alt="腾讯微博" title="腾讯微博" />
+									</div>
+								</li>
+								<li class="row padding-20">
+									<span class="block">腾讯微博</span>
+									<span class="block margin-top-10">
+										<a href="" data-accname="腾讯微博" data-accid="2">[解除关联]</a>
+									</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-			</footer>
-			<!-- end footer -->
-
+			</div>
+			<div style="height: 180px;"></div>
 		</div>
+		<!-- end main -->
+
+		<!-- start footer -->
+		<footer class="container">
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">魔讯网</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="http://www.dcloud.wang/" target="_blank" data-spm-protocol="i">神马传文</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">联系我们</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">法律声明</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">安全中心</a>
+						</li>
+					</ul>
+					<ul class="list-inline">
+						<li>
+							备案许可证：豫ICP备14020342号 © 2014-2016 Dcloud.xyz 版权所有
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="row">
+					<ul class="list-inline list-security">
+						<li>
+							<a href="http://zhanzhang.anquan.org/physical/report/?domain=www.xiexianbin.cn" target="_blank" title="安全联盟站长平台安全网站">
+								<img src="../img/zhanzhang.anquan.org.png" alt="安全联盟站长平台" class="security-img">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div style="display: block; height: 36px;"></div>
+			</div>
+		</footer>
+		<!-- end footer -->
 	</body>
 
 </html>
