@@ -1,0 +1,643 @@
+/**
+ * for cas main css
+ * author me@xiexianbin.cn
+ */
+
+
+/* for login page */
+
+.border-radius-none {
+	border-radius: 0;
+}
+
+.block {
+	display: block;
+	overflow: hidden;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clean-padding{
+	padding: 0 0;
+}
+
+.padding-20 {
+	padding: 20px 20px;
+}
+
+.padding-left-20 {
+	padding-left: 20px;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.cas-header-container {
+	height: 75px;
+}
+
+.cas-logo span {
+	height: 60px;
+	line-height: 60px;
+	color: #999;
+	font-size: 20px;
+	display: block;
+}
+
+header .list-inline>li,
+footer .list-inline>li {
+	padding-left: 8px;
+}
+
+.cas-logo,
+.cas-header-link {
+	margin: 12px 10px 2px 0px;
+}
+
+.cas-logo-img {
+	height: 60px;
+}
+
+.cas-header-link {
+	margin-top: 35px;
+}
+
+.cas-hr-top {
+	border-top: 1px solid #e3e3e3;
+	padding-top: 10px;
+}
+
+.cas-li-split {
+	border-left: 1px solid #9c9c9c;
+	height: 14px;
+	line-height: 14px;
+}
+
+.cas-hr-bottom {
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 5px;
+}
+
+.cas-container {
+	margin: 42px 0;
+}
+
+.cas-box {
+	border: 1px solid #dedede;
+	padding: 20px 20px 5px 20px;
+}
+
+.cas-box .form-group {
+	margin: 10px 0;
+}
+
+.cas-box .form-control {
+	box-shadow: none;
+	border-color: #d2d6de;
+	padding-left: 30px;
+}
+
+.cas-box .col-xs-3,
+.cas-box .col-xs-4,
+.cas-box .col-xs-5,
+.cas-box .col-xs-7,
+.cas-box .col-sm-3,
+.cas-box .col-sm-4,
+.cas-box .col-sm-5,
+.cas-box .col-sm-7,
+.cas-box .col-md-3,
+.cas-box .col-md-4,
+.cas-box .col-md-5,
+.cas-box .col-md-7,
+.cas-box .col-lg-3,
+.cas-box .col-lg-4,
+.cas-box .col-lg-5 {
+	padding: 0 0;
+}
+
+.cas-box1 .col-xs-3,
+.cas-box1 .col-xs-4,
+.cas-box1 .col-xs-5,
+.cas-box1 .col-xs-7,
+.cas-box1 .col-sm-3,
+.cas-box1 .col-sm-4,
+.cas-box1 .col-sm-5,
+.cas-box1 .col-sm-7,
+.cas-box1 .col-md-3,
+.cas-box1 .col-md-4,
+.cas-box1 .col-md-5,
+.cas-box1 .col-md-7,
+.cas-box1 .col-lg-3,
+.cas-box1 .col-lg-4,
+.cas-box1 .col-lg-5 {
+	padding: 0 0;
+}
+
+.cas-box .cas-label {
+	font-weight: 400;
+}
+
+.cas-box .cas-fonts {
+	position: absolute;
+	z-index: 3;
+	float: left;
+	display: block;
+	margin: 4px 4px;
+	width: 32px;
+	height: 32px;
+}
+
+.cas-box .username-label {
+	background: url(../img/v2/login/username.png) no-repeat;
+}
+
+.cas-box .password-label {
+	background: url(../img/v2/login/password.png) no-repeat;
+}
+
+.cas-box .validate-label {
+	background: url(../img/v2/login/key.png) no-repeat;
+}
+
+.cas-box1 span {
+	height: 34px;
+	line-height: 34px;
+}
+
+.cas-login-btn {
+	margin: 12px 0 8px 0;
+}
+
+.login-container {
+	padding-top: 15px;
+}
+
+.login-icon {
+	background: url("../img/v2/bindaccount/all-account.png");
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+}
+
+.qq-icon {
+	background-position: 0 0;
+}
+
+.qq-icon-mouseon {
+	background-position: 0 -24px;
+}
+
+.sina-icon {
+	background-position: -25px -0px;
+}
+
+.sina-icon-mouseon {
+	background-position: -25px -24px;
+}
+
+.ren-icon {
+	background-position: -50px -0px;
+}
+
+.ren-icon-mouseon {
+	background-position: -50px -24px;
+}
+
+.tqq-icon {
+	background-position: -75px -0px;
+}
+
+.tqq-icon-mouseon {
+	background-position: -75px -24px;
+}
+
+.wechat-icon {
+	background-position: -175px -0px;
+}
+
+.wechat-icon-mouseon {
+	background-position: -175px -24px;
+}
+
+.github-icon {
+	background: url("../img/v2/bindaccount/github_24_24.png");
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+	background-color: gainsboro;
+}
+
+.cas-nav {
+	height: 42px;
+	line-height: 42px;
+	width: 100%;
+	background-color: #00a2ca;
+}
+
+.cas-nav .nav>li>a {
+	padding: 10px 25px;
+}
+
+.cas-nav a {
+	color: #fff;
+	font-size: 18px;
+	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+}
+
+.cas-nav .navbar-nav>li>a:hover {
+	background: #0e90d2
+}
+
+.cas-nav .active {
+	background: #0e90d2
+}
+
+.cas-nav .navbar-nav>li>a {
+	padding-top: 12px;
+	padding-bottom: 10px;
+}
+
+.cas-container-border {
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+
+
+/* for page footer */
+
+footer {
+	font-size: 85%;
+	color: #9c9c9c;
+}
+
+.cas-box a:link,
+.cas-box a:active,
+.cas-box a:visited,
+footer a:link,
+footer a:active,
+footer a:visited,
+header a:link,
+header a:active,
+header a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+footer a:hover,
+header a:hover {
+	color: #f40;
+	text-decoration: none;
+}
+
+footer .list-security .security-img {
+	width: 76px;
+	height: 29px;
+}
+
+/* for find password page */
+.mod-sub-nav {
+    height: 34px;
+    background: url(../img/v2/password/mod_sub_nav.png) no-repeat 0 0;
+    margin: 30px 0 20px;
+    line-height: 34px;
+    color: #666;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+    padding-left: 0px;
+}
+.mod-sub-nav li.list1-active {
+	background: url(../img/v2/password/sub_nav_1.png) no-repeat 0 0;
+	color: #2e82ff;
+}
+.mod-sub-nav li.list2-active {
+	background: url(../img/v2/password/sub_nav_2.png) no-repeat 0 0;
+	color: #2e82ff;
+	margin-left: -12px;
+	padding-left: 78px;
+}
+.mod-sub-nav li.list3-active {
+	background: url(../img/v2/password/sub_nav_3.png) no-repeat 0 0;
+	color: #2e82ff;
+	margin-left: -24px;
+	padding-left: 78px;
+}
+.mod-sub-nav li {
+	float: left;
+	padding-left: 66px;
+}
+.mod-sub-list1 {
+	width: 241px;
+}
+.mod-sub-list2 {
+	width: 241px;
+}
+.mod-sub-list3 {
+	width: 241px;
+}
+
+.auth-account-nav li {
+	overflow: hidden;
+	height: 120px;
+	width: 100px;
+}
+.auth-account-nav li a {
+	float: left;
+	width: 100px;
+	color: #000;
+	height: 120px;
+	padding-top: 20px;
+	cursor: pointer;
+	border: 1px solid #e5e5e5;
+	background-color: #f9f9f9;
+	text-align: center;
+	background-position: 50% 54px;
+	background-repeat: no-repeat;
+}
+
+.auth-account-nav li a:hover {
+	border: 1px solid #e0e0e0;
+	background-color: #cecece;
+	text-decoration: none;
+}
+
+.auth-account-nav li a.auth-email {
+	background-image: url(../img/v2/password/email.png);
+}
+.auth-account-nav li a.auth-email:hover {
+	background-image: url(../img/v2/password/email_hover.png);
+}
+.auth-account-nav li a.auth-mobile {
+	background-image: url(../img/v2/password/mobile.png);
+}
+.auth-account-nav li a.auth-mobile:hover {
+	background-image: url(../img/v2/password/mobile_hover.png);
+}
+
+/* for cas user center main page */
+
+.cas-ucenter-segment {
+	color: #333;
+	background: #f3f3f3;
+	height: 38px;
+	border-bottom: 1px solid #dedede;
+	border-top: 1px solid #dedede;
+	font-weight: bold;
+	line-height: 38px;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.cas-ucenter-left li a {
+	position: relative;
+	margin-left: -16px;
+	line-height: 50px;
+	font-size: 12px;
+	float: left;
+	width: 285px;
+	padding-left: 44px;
+	border-bottom: 1px dotted #dcdcdc;
+	color: #666;
+	background: url('../img/v2/ucenter/ucenternav_bg.png') no-repeat;
+}
+
+.cas-ucenter-left li.changepwd a {
+	background-position: 14px 12px;
+}
+
+.cas-ucenter-left li.phone a {
+	background-position: 14px -38px;
+}
+
+.cas-ucenter-left li.email a {
+	background-position: 14px -88px;
+}
+
+.cas-ucenter-left li.appeal a {
+	background-position: 14px -138px;
+}
+
+.cas-ucenter-left li.help a {
+	background-position: 14px -188px;
+}
+
+.cas-bold {
+	font-weight: bold;
+	color: rgb(102, 102, 102);
+}
+
+.cas-changeinfo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.cas-cright-title {
+	font-size: 22px;
+	color: #404040;
+	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+	font-weight: normal;
+	line-height: 40px;
+}
+
+.cas-cright-info {
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+.cas-cright-segment {
+	border-top: 1px dashed #dfdfdf;
+}
+
+.score-step,
+.score-state-left {
+	background: url('../img/v2/ucenter/ucenter_1.png') no-repeat 0 0;
+}
+
+.score-step {
+	background-position: 0 -138px;
+	width: 435px;
+	height: 10px;
+	margin: 14px 0 0 0;
+	display: block;
+}
+
+.score-state-left {
+	background-position: 0 -180px;
+	float: left;
+	width: 5px;
+	height: 10px;
+}
+
+.score-num {
+	font-size: 28px;
+	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+	margin-left: 10px;
+	line-height: 34px;
+	color: #fdb13f;
+}
+
+.score-tip {
+	clear: both;
+	font-size: 14px;
+	font-weight: normal;
+	height: 44px;
+	line-height: 24px;
+	color: #333;
+	padding: 10px 0 10px 0;
+}
+
+.score-detail-ok,
+.score-detail-warn,
+.score-detail-err {
+	background: url('../img/v2/ucenter/ucenter_1.png') no-repeat 0 0;
+	padding-left: 20px;
+}
+
+.score-detail-ok {
+	background-position: -416px -76px;
+}
+
+.score-detail-warn {
+	background-position: -416px -35px;
+}
+
+.score-detail-err {
+	background-position: -416px 4px;
+}
+
+.score-detail-list {
+	padding-left: 24px;
+	margin-bottom: 5px;
+	margin-right: 180px;
+}
+
+.font-style {
+	color: #666;
+	font-size: 12px;
+}
+
+.score-detail-list li {
+	line-height: 30px;
+	height: 30px;
+}
+
+.notice-level {
+	height: 130px;
+	width: 122px;
+	background: url('../img/v2/ucenter/ucenter_1.png') no-repeat -227px 12px;
+}
+
+.notice-list-tip {
+	float: right;
+	display: block;
+	margin-right: 70px;
+	_margin-right: 35px;
+	width: 240px;
+	height: 30px;
+	padding-top: 7px;
+	padding-left: 20px;
+	background: url(../img/v2/ucenter/noticelisttip_bg.png) no-repeat;
+	color: #666;
+}
+
+.level-select {
+	background: url(../img/v2/ucenter/radio_select.png) no-repeat 5px 7px;
+}
+
+.level-normal {
+	background: url(../img/v2/ucenter/radio_normal.png) no-repeat 5px 7px;
+}
+
+.notice-list li {
+	cursor: pointer;
+	padding-bottom: 14px;
+	_padding-bottom: 18px;
+	padding-left: 25px;
+	-moz-transition: .1s;
+	-o-transition: .1s;
+	-webkit-transition: .1s;
+	display: flex;
+	height: 52px;
+}
+
+.notice-list li span {
+	margin-top: 4px;
+}
+
+.notice-list li b {
+	display: block;
+	float: left;
+	font-size: 24px;
+	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+	font-weight: normal;
+	color: #666;
+	margin: 0 5px;
+}
+
+.cas-bind-container {
+	margin-top: 30px;
+	position: relative;
+	display: flex;
+}
+
+.bind-img {
+	background: url(../img/v2/ucenter/sprite_sec_question.png) no-repeat 0 0;
+	float: right;
+	width: 73px;
+	height: 73px;
+}
+
+.bind-phone {
+	background-position: -96px -6px;
+}
+
+.bind-email {
+	background-position: -96px -104px;
+}
+
+.bind-question {
+	background-position: -96px -202px;
+}
+
+.unbind-phone {
+	background-position: -5px -6px
+}
+
+.unbind-email {
+	background-position: -5px -104px;
+}
+
+.unbind-question {
+	background-position: -5px -202px;
+}
+
+.bind-title-detail-msg {
+	font-size: 18px;
+	color: rgb(255, 153, 0);
+	font-weight: bold;
+	font-family: 宋体, Arial, Helvetica, STHeiti;
+}
+
+.oauth-img {
+	width: 56px;
+	height: 56px;
+	overflow: hidden;
+}

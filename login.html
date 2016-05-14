@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Dcloud中央认证系统</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="alternate icon" type="image/png" href="img/favicon.png">
+
+		<link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/cas.css" />
+	</head>
+
+	<body>
+		<!-- start header -->
+		<header class="container-fluid  cas-header-container cas-hr-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="row cas-logo">
+							<div class="col-md-4 col-lg-4">
+								<img src="img/v2/logo-dcloud.svg" alt="DCloud" class="img-rounded img-responsive cas-logo-img">
+							</div>
+							<div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+								<span class="text-left">账号登录</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 hidden-xs hidden-sm">
+						<div class="cas-header-link">
+							<ul class="list-inline">
+								<li>
+									<small>
+										<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+									</small>
+								</li>
+								<li class="cas-li-split">
+									<small>
+										<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+									</small>
+								</li>
+								<li class="cas-li-split">
+									<small>
+										<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+									</small>
+								</li>
+								<li class="cas-li-split">
+									<small>
+										<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+									</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+
+		<!-- start main -->
+		<div class="container">
+			<div class="row cas-container">
+				<div class="col-md-7 col-lg-7 hidden-xs hidden-sm">
+					<img style="margin: 80px 0 0 90px;" src="./img/370-230.png">
+				</div>
+				<div class="col-md-5 col-lg-5">
+					<section class="row">
+						<div class="col-md-8 col-lg-8 cas-box">
+							<div class="cas-hr-bottom">
+								<span>会员登录</span>
+							</div>
+							<form method="post" action="login.html" class="am-form" role="form">
+								<div class="has-error"></div>
+								<div class="form-group">
+									<label for="name">登录名</label>
+									<label for="username" class="username-label cas-fonts"></label>
+									<input type="text" class="form-control border-radius-none" id="username" placeholder="邮箱/用户名/手机">
+								</div>
+								<div class="form-group">
+									<div class="block">
+										<div class="col-md-7">
+											<label for="name">密码</label>
+										</div>
+										<div class="col-md-5">
+											<label for="name" class="right cas-label">
+												<small><a href="findpassword.html">忘记密码？</a></small>
+											</label>
+										</div>
+									</div>
+									<label for="password" class="password-label cas-fonts"></label>
+									<input type="password" class="form-control border-radius-none" id="name" placeholder="登录密码">
+								</div>
+								<div class="form-group">
+									<label for="name">验证码</label>
+									<div class="block">
+										<div class="col-sm-4">
+											<label for="validateCode" class="validate-label cas-fonts"></label>
+											<input type="text" class="form-control text-center border-radius-none" id="validateCode">
+										</div>
+										<div class="col-sm-5">
+											<img src="img/genimage.png" style="height: 30px;margin: 2px 4px 0 8px;">
+										</div>
+										<div class="col-sm-3 hidden-xs" style="margin-top: 5px;">
+											<small><a href="#">点击刷新</a></small>
+										</div>
+									</div>
+								</div>
+								<div>
+									<button type="submit" class="btn btn-block btn-primary text-center border-radius-none cas-login-btn">登 录</button>
+									<label for="password" class="text-right block cas-label">
+										<small class="right"><a href="register.html"> 免费注册？</a></small>
+									</label>
+								</div>
+							</form>
+							<div class="cas-hr-bottom">第三方账号登录</div>
+							<div class="login-container">
+								<ul class="list-inline">
+									<li>
+										<a href="#">
+											<div class="login-icon qq-icon"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="login-icon sina-icon"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="login-icon tqq-icon"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="login-icon wechat-icon"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="github-icon"></div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+
+			</div>
+		</div>
+		<!-- end main -->
+
+		<!-- start footer -->
+		<footer class="container">
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">魔讯网</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="http://www.dcloud.wang/" target="_blank" data-spm-protocol="i">神马传文</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">联系我们</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">法律声明</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">安全中心</a>
+						</li>
+					</ul>
+					<ul class="list-inline">
+						<li>
+							备案许可证：豫ICP备14020342号 © 2014-2016 Dcloud.xyz 版权所有
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="row">
+					<ul class="list-inline list-security">
+						<li>
+							<a href="http://zhanzhang.anquan.org/physical/report/?domain=www.xiexianbin.cn" target="_blank" title="安全联盟站长平台安全网站">
+								<img src="./img/zhanzhang.anquan.org.png" alt="安全联盟站长平台" class="security-img">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div style="display: block; height: 36px;"></div>
+			</div>
+		</footer>
+		<!-- end footer -->
+	</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Dcloud中央认证系统</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="alternate icon" type="image/png" href="img/favicon.png">
+
+		<link rel="stylesheet" href="../bootstrap-3.3.6/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/cas.css" />
+	</head>
+
+	<body>
+		<!-- start header -->
+		<header class="container-fluid  cas-header-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="row cas-logo">
+							<div class="col-md-4 col-lg-4">
+								<img src="../img/v2/logo-dcloud.svg" alt="DCloud" class="img-rounded img-responsive cas-logo-img">
+							</div>
+							<div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+								<span class="text-left">安全中心</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+
+		<!-- start nav -->
+		<nav class="container-fluid cas-nav" role="navigation">
+			<div class="container">
+				<div class="col-sm-12 col-md-12 col-lg-12 row">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="center.html"><span>首页</span></a>
+						</li>
+						<li>
+							<a href="security.html"><span>密保工具</span></a>
+						</li>
+						<li>
+							<a href="password.html"><span>密码管理</span></a>
+						</li>
+						<li>
+							<a href="bind.html"><span>账号关联</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end nav -->
+
+		<!-- start main -->
+		<div class="container">
+			<div class="col-md-3 col-lg-3 cas-container-border">
+				<div class="row padding-20">
+					<div class="col-md-6 col-lg-6 row">
+						<img class="figure" src="https://ss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/09737772642116.jpg?1434860549" />
+					</div>
+					<div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 padding-top-20">
+						<span class="block">wrd</span>
+						<span class="block">VIP 1</span>
+						<a href="#">修改资料</a>
+					</div>
+				</div>
+				<ul class="list-unstyled">
+					<li class="cas-bold">
+						<small>最近一次敏感操作：</small>
+					</li>
+					<li class="cas-changeinfo">2015-06-19 16:21:09&nbsp;&nbsp;短信提醒开启</li>
+					<li><small><a href="#">查看更多</a></small></li>
+				</ul>
+				<div class="row cas-ucenter-segment">快速通道</div>
+				<ul class="list-unstyled cas-ucenter-left">
+					<li class="changepwd">
+						<a>修改密码</a>
+					</li>
+					<li class="phone">
+						<a>密保手机：135***108 修改</a>
+					</li>
+					<li class="email">
+						<a>密保邮箱：x**xie@163.com 修改</a>
+					</li>
+					<li class="appeal">
+						<a>人工投诉</a>
+					</li>
+					<li class="help">
+						<a>帮助中心</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-9 col-lg-9 padding-20">
+				<div class="padding-left-20">
+					<p class="cas-cright-title">安全评分</p>
+					<div class="block">
+						<div class="col-md-7 col-lg-7">
+							<div class="score-step">
+								<div class="score-state-left" style="width:373.45px"></div>
+							</div>
+						</div>
+						<div class="col-md-2 col-lg-2">
+							<div class="score-num">87分!</div>
+						</div>
+						<div class="col-md-2 col-lg-2">
+							<button class="btn btn-block btn-primary text-center border-radius-none">重新检测</button>
+						</div>
+					</div>
+					<div class="score-tip">您的帐号存在安全风险，建议立即优化以下<b style="color: red">1</b>项：</div>
+					<div class="">
+						<ul class="list-unstyled score-detail-list font-style">
+							<li class="score-detail-err">
+								<span>开启登录保护，帐号被盗也不用担心</span>
+								<a href="" target="_blank" data-click="authtwice">立即开启</a>
+							</li>
+							<li class="score-detail-ok">
+								<span>绑定密保手机，帐号安全一步到位</span>
+							</li>
+							<li class="score-detail-warn">
+								<span>绑定密保邮箱，提供安全保障</span>
+							</li>
+							<li class="score-detail-err">
+								<span>开启短信提醒，安全信息随时知道</span>
+							</li>
+						</ul>
+					</div>
+					<p class="cas-cright-title margin-top-20 cas-cright-segment">安全提醒设置</p>
+					<div class="block">
+						<div class="cas-cright-info">当帐号发生异常情况时，系统自动发送的通知提醒</div>
+						<div class="block">
+							<div class="left">
+								<div class="notice-level"></div>
+							</div>
+							<ul class="list-unstyled left notice-list" id="notice_change">
+								<li class="level-select" data-click="3">
+									<span class="notice-list-span">短信提醒：安全级别</span>
+									<b>高</b>
+									<small class="notice-list-tip">方便快捷，时效性高，强烈建议开启！</small>
+								</li>
+								<li class="level-normal" data-click="2">
+									<span class="notice-list-span">邮件提醒：安全级别</span>
+									<b>中</b>
+								</li>
+								<li class="level-normal" data-click="1">
+									<span class="notice-list-span">私信提醒：安全级别</span>
+									<b>低</b>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="cas-cright-title margin-top-20 cas-cright-segment">登录历史</p>
+					<div class="">
+						<div class="cas-cright-info">
+							以下为您最近17次登录记录，若存在异常情况，请在核实后尽快
+							<a target="_blank" href="">修改密码</a>
+						</div>
+						<table id="" class="table font-style">
+							<tbody>
+								<tr class="login-histroy-title">
+									<th width="120">时间</th>
+									<th width="120">地点</th>
+									<th width="120">IP</th>
+									<th width="130">浏览器</th>
+									<th width="130">登录方式</th>
+									<th width="150">设备</th>
+								</tr>
+								<tr class="login-histroy-date">
+									<td> 06月21日 </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>12:22 </td>
+									<td>上海 </td>
+									<td>180.170.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win8.1) </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>09:01 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>- </td>
+									<td>用户名登录 </td>
+									<td>客户端 </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>23:31 </td>
+									<td>上海 </td>
+									<td>180.170.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win8.1) </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>08:49 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win7) </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>15:40 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win7) </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>17:14 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win7) </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>16:34 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>- </td>
+									<td>QQ登录 </td>
+									<td>- </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>14:48 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win7) </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>17:31 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win7) </td>
+								</tr>
+								<tr class="login-histroy-abnormal">
+									<td>08:46 </td>
+									<td>上海 </td>
+									<td>112.65.*.* </td>
+									<td>Chrome 42.0 </td>
+									<td>用户名登录 </td>
+									<td>电脑 (Win7) </td>
+								</tr>
+								<tr class="login-histroy-more">
+									<td colspan="6" class="bgfafafa"><a href="/v2/?accountrecord">查看所有</a> </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- start main -->
+
+		<!-- start footer -->
+		<footer class="container">
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="http://www.moxun.wang/" target="_blank" data-spm-protocol="i">魔讯网</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="http://www.dcloud.wang/" target="_blank" data-spm-protocol="i">神马传文</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12 cas-hr-top">
+				<div class="row">
+					<ul class="list-inline">
+						<li>
+							<a href="#" target="_blank" data-spm-protocol="i">关于我们</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">联系我们</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">法律声明</a>
+						</li>
+						<li class="cas-li-split">
+							<a href="#" target="_blank" data-spm-protocol="i">安全中心</a>
+						</li>
+					</ul>
+					<ul class="list-inline">
+						<li>
+							备案许可证：豫ICP备14020342号 © 2014-2016 Dcloud.xyz 版权所有
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="row">
+					<ul class="list-inline list-security">
+						<li>
+							<a href="http://zhanzhang.anquan.org/physical/report/?domain=www.xiexianbin.cn" target="_blank" title="安全联盟站长平台安全网站">
+								<img src="../img/zhanzhang.anquan.org.png" alt="安全联盟站长平台" class="security-img">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div style="display: block; height: 36px;"></div>
+			</div>
+		</footer>
+		<!-- end footer -->
+	</body>
+
+</html>
