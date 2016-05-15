@@ -23,7 +23,7 @@
 	float: right;
 }
 
-.clean-padding{
+.clean-padding {
 	padding: 0 0;
 }
 
@@ -45,10 +45,6 @@
 
 .margin-top-10 {
 	margin-top: 10px;
-}
-
-.cas-header-container {
-	height: 75px;
 }
 
 .cas-logo span {
@@ -242,36 +238,6 @@ footer .list-inline>li {
 	background-color: gainsboro;
 }
 
-.cas-nav {
-	height: 42px;
-	line-height: 42px;
-	width: 100%;
-	background-color: #00a2ca;
-}
-
-.cas-nav .nav>li>a {
-	padding: 10px 25px;
-}
-
-.cas-nav a {
-	color: #fff;
-	font-size: 18px;
-	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
-}
-
-.cas-nav .navbar-nav>li>a:hover {
-	background: #0e90d2
-}
-
-.cas-nav .active {
-	background: #0e90d2
-}
-
-.cas-nav .navbar-nav>li>a {
-	padding-top: 12px;
-	padding-bottom: 10px;
-}
-
 .cas-container-border {
 	border-left: 1px solid #dedede;
 	border-right: 1px solid #dedede;
@@ -309,43 +275,52 @@ footer .list-security .security-img {
 	height: 29px;
 }
 
+
 /* for find password page */
+
 .mod-sub-nav {
-    height: 34px;
-    background: url(../img/v2/password/mod_sub_nav.png) no-repeat 0 0;
-    margin: 30px 0 20px;
-    line-height: 34px;
-    color: #666;
-    font-size: 16px;
-    font-family: "Microsoft Yahei", \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
-    padding-left: 0px;
+	height: 34px;
+	background: url(../img/v2/password/mod_sub_nav.png) no-repeat 0 0;
+	margin: 30px 0 20px;
+	line-height: 34px;
+	color: #666;
+	font-size: 16px;
+	font-family: "Microsoft Yahei", \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+	padding-left: 0px;
 }
+
 .mod-sub-nav li.list1-active {
 	background: url(../img/v2/password/sub_nav_1.png) no-repeat 0 0;
 	color: #2e82ff;
 }
+
 .mod-sub-nav li.list2-active {
 	background: url(../img/v2/password/sub_nav_2.png) no-repeat 0 0;
 	color: #2e82ff;
 	margin-left: -12px;
 	padding-left: 78px;
 }
+
 .mod-sub-nav li.list3-active {
 	background: url(../img/v2/password/sub_nav_3.png) no-repeat 0 0;
 	color: #2e82ff;
 	margin-left: -24px;
 	padding-left: 78px;
 }
+
 .mod-sub-nav li {
 	float: left;
 	padding-left: 66px;
 }
+
 .mod-sub-list1 {
 	width: 241px;
 }
+
 .mod-sub-list2 {
 	width: 241px;
 }
+
 .mod-sub-list3 {
 	width: 241px;
 }
@@ -355,6 +330,7 @@ footer .list-security .security-img {
 	height: 120px;
 	width: 100px;
 }
+
 .auth-account-nav li a {
 	float: left;
 	width: 100px;
@@ -378,17 +354,77 @@ footer .list-security .security-img {
 .auth-account-nav li a.auth-email {
 	background-image: url(../img/v2/password/email.png);
 }
+
 .auth-account-nav li a.auth-email:hover {
 	background-image: url(../img/v2/password/email_hover.png);
 }
+
 .auth-account-nav li a.auth-mobile {
 	background-image: url(../img/v2/password/mobile.png);
 }
+
 .auth-account-nav li a.auth-mobile:hover {
 	background-image: url(../img/v2/password/mobile_hover.png);
 }
 
+
 /* for cas user center main page */
+
+
+/* for nav */
+
+.navbar-default {
+	background-color: #00a2ca;
+	border-color: #0e90d2;
+}
+
+.navbar-toggle {
+	margin-top: 4px;
+	margin-right: 6px;
+	margin-bottom: 4px;
+	background-color: #008eb7;
+	border: 1px solid transparent;
+	border-radius: 2px;
+}
+
+.navbar-brand {
+	height: 42px;
+	padding: 12px 20px;
+}
+
+.navbar-default .navbar-header a,
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	background-color: #00a2ca;
+	font-size: 18px;
+	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
+}
+
+.navbar-default .navbar-header .active{
+	background-color: #0e90d2;
+}
+
+
+.navbar-default .navbar-header a:focus,
+.navbar-default .navbar-header a:hover{
+	color: #fff;
+	background-color: #0e90d2;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	background-color: #0e90d2;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #fff;
+	background-color: #0e90d2;
+}
 
 .cas-ucenter-segment {
 	color: #333;
