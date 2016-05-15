@@ -1,11 +1,14 @@
 static pages
 ============
 
-For all xiexianbin project static pages.
+For cas project static pages.
 
 cas
 ===
 
-https://github.com/xiexianbin/cas
+http://www.xiexianbin.cn/caspage/
+http://www.xiexianbin.cn/caspage/login.html
+http://www.xiexianbin.cn/caspage/ucenter/center.html
+
 
 
