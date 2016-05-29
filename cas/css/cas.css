@@ -126,24 +126,6 @@ footer .list-inline>li {
 	padding: 0 0;
 }
 
-.cas-box1 .col-xs-3,
-.cas-box1 .col-xs-4,
-.cas-box1 .col-xs-5,
-.cas-box1 .col-xs-7,
-.cas-box1 .col-sm-3,
-.cas-box1 .col-sm-4,
-.cas-box1 .col-sm-5,
-.cas-box1 .col-sm-7,
-.cas-box1 .col-md-3,
-.cas-box1 .col-md-4,
-.cas-box1 .col-md-5,
-.cas-box1 .col-md-7,
-.cas-box1 .col-lg-3,
-.cas-box1 .col-lg-4,
-.cas-box1 .col-lg-5 {
-	padding: 0 0;
-}
-
 .cas-box .cas-label {
 	font-weight: 400;
 }
@@ -168,11 +150,6 @@ footer .list-inline>li {
 
 .cas-box .validate-label {
 	background: url(../img/v2/login/key.png) no-repeat;
-}
-
-.cas-box1 span {
-	height: 34px;
-	line-height: 34px;
 }
 
 .cas-login-btn {
