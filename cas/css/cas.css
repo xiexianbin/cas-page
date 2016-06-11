@@ -4,7 +4,7 @@
  */
 
 
-/* for login page */
+/* for common pate */
 
 .border-radius-none {
 	border-radius: 0;
@@ -43,9 +43,21 @@
 	margin-top: 20px;
 }
 
+.margin-top-5 {
+	margin-top: 5px;
+}
+
 .margin-top-10 {
 	margin-top: 10px;
 }
+
+.height-34 {
+	height: 34px;
+	line-height: 34px;
+}
+
+
+/* for login page */
 
 .cas-logo span {
 	height: 60px;
@@ -379,13 +391,12 @@ footer .list-security .security-img {
 	font-family: \5fae\8f6f\96c5\9ed1, \9ed1\4f53;
 }
 
-.navbar-default .navbar-header .active{
+.navbar-default .navbar-header .active {
 	background-color: #0e90d2;
 }
 
-
 .navbar-default .navbar-header a:focus,
-.navbar-default .navbar-header a:hover{
+.navbar-default .navbar-header a:hover {
 	color: #fff;
 	background-color: #0e90d2;
 }
